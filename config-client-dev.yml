@@ -3,3 +3,20 @@ spring:
     active: dev
   application: 
     name: config-client
+  rabbitmq:
+    host: 10.242.216.75
+    port: 15627
+    username: guest
+    password: guest
+  cloud:
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8771
